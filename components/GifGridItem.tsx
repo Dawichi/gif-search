@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 export const GifGridItem = ({ title, url}) => {
     
     return (
-        <div className='card animate__animated animate__fadeIn' >
-            <img src={ url } alt={ title } />
-            <p className="w3-center">{ title }</p>
+        <div className='animate__animated animate__fadeIn'>
+            <img src={ url } alt={ title } className='rounded-lg w-full h-full' />
         </div>
     )
 }
